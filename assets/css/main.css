@@ -30,6 +30,10 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
+a {
+  cursor: pointer;
+}
+
 body {
   line-height: 1;
 }
@@ -82,9 +86,71 @@ nav .navbar .links {
   flex-direction: row;
   gap: 30px;
 }
+nav .navbar .links #about-btn #dropdowned {
+  position: absolute;
+  z-index: 1;
+  padding: 15px 20px;
+}
+nav .navbar .links #about-btn i {
+  transition: 0.3s;
+}
+nav .navbar .links #about-btn:hover #dropdowned {
+  display: block;
+}
+nav .navbar .links #about-btn:hover i {
+  transform: rotate(180deg);
+}
+nav .navbar .links #dropdowned {
+  display: none;
+  background-color: #fff;
+  padding: 10px 15px;
+}
 nav .navbar .links a {
   color: #000;
   font-size: 18px;
+}
+nav .navbar .links a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  width: 100%;
+  background-color: #f6f7f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+footer .row1 {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .row1 h4 {
+  font-size: 24px;
+  font-weight: 600;
+}
+footer .row1 .links {
+  display: flex;
+  flex-direction: row;
+  text-decoration: underline;
+  gap: 30px;
+}
+footer .row1 .links a {
+  color: #000;
+}
+footer .icons {
+  max-width: 1280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 50px;
+}
+footer .icons i {
+  font-size: 24px;
 }
 
 .wellcome {
@@ -319,6 +385,14 @@ nav .navbar .links a {
 }
 .follow-us h2 {
   margin-top: 50px;
+  font-size: 54px;
+}
+.follow-us a, .follow-us h2 {
+  color: #4d2c57;
+}
+.follow-us a {
+  font-size: 24px;
+  margin-bottom: 50px;
 }
 .follow-us .images {
   display: flex;
@@ -337,4 +411,10 @@ nav .navbar .links a {
 }
 .follow-us .images #img3 {
   background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=392,h=368,fit=crop/minattnvs/pp-Y4LyMOXgyWUGR3qZ.png);
+}
+
+@media screen and (max-width: 1280px) {
+  .follow-us .images {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=main.css.map */
