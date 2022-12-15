@@ -1,0 +1,28 @@
+.follow-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    h2{
+        margin-top: 50px;
+    }
+    .images{
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        .img{
+            width: 392px;
+            height: 368px;
+        }
+        #img1{
+            background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=392,h=368,fit=crop/minattnvs/mm-YBgqvl9QloTBK3BL.png);
+        }
+        #img2{
+            background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=392,h=368,fit=crop/minattnvs/gg-mk37Q8gargCeBpom.png);
+        }
+        #img3{
+            background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=392,h=368,fit=crop/minattnvs/pp-Y4LyMOXgyWUGR3qZ.png);
+        }
+    }
+}

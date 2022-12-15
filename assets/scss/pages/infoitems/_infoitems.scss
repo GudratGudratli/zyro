@@ -1,0 +1,62 @@
+.info-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 25px;
+        .item{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            flex-direction: column;
+            gap: 25px;
+            color: #4d2c57;
+
+            .img{
+                width: 600px;
+                height: 388px;
+            }
+
+            h4{
+                font-size: 32px;
+                font-weight: 500;
+            }
+
+            span{
+                font-size: 18px;
+            }
+
+            button{
+                font-size: 16px;
+                padding: 15px 45px;
+                background-color: #fff;
+                margin-bottom: 100px;
+                transition: 0.3s;
+                border-color: #4d2c57;
+            }
+            button:hover{
+                background-color: #4d2c57;
+                color: #fff;
+            }
+
+            #img1{
+                background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=600,h=368,fit=crop/minattnvs/Rectangle-AVLnvkgy1guy1MK4.png);
+            }
+            #img2{
+                background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=600,h=368,fit=crop/minattnvs/Rectangle-dJo73kDbN1i6M7yx.png);
+            }
+        }
+    }
+}
+
+@media screen and(max-width:1280px){
+    .info-items{
+        .row{
+            flex-direction: column;
+        }
+    }
+}
