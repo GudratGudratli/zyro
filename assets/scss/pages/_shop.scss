@@ -1,0 +1,146 @@
+main {
+    // shop section start
+    .shop-wellcome {
+        #img {
+            background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/minattnvs/dd-d95eByKQX2CoQJ4L.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 404px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h1 {
+                font-size: 84px;
+                color: #fff;
+            }
+        }
+    }
+
+    // shop section end
+    // items section start
+    .items-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 75px 0px;
+
+        .items-content-inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 50px;
+            width: 1280px;
+
+            .shopping-categories {
+                display: flex;
+                flex-direction: row;
+                gap: 50px;
+                color: #878786;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 5px;
+                }
+            }
+
+            .shopping-options {
+                color: #878786;
+                display: flex;
+                gap: 10px;
+                align-self: flex-end;
+            }
+
+            .items {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: 50px;
+
+                .item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 25px;
+
+                    .item-content {
+                        text-align: center;
+                        line-height: 30px;
+                        color: #2c2c2c;
+
+                        p {
+                            font-size: 18px;
+                        }
+
+                        span {
+                            font-size: 24px;
+                            font-weight: 700;
+                        }
+                    }
+
+                    .img-frame {
+                        width: 386.5px;
+                        height: 386.5px;
+                        overflow: hidden;
+
+                        .img {
+                            background-position: center;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            width: 386.5px;
+                            height: 386.5px;
+                            transition: 0.5s;
+                        }
+
+                        .img:hover {
+                            transform: scale(1.25);
+                        }
+
+                        #img1 {
+                            background-image: url(https://d2j6dbq0eux0bg.cloudfront.net/images/62087280/2339697137.jpg);
+                        }
+
+                        #img2 {
+                            background-image: url(https://d2j6dbq0eux0bg.cloudfront.net/images/62087280/2339705789.jpg);
+                        }
+
+                        #img3 {
+                            background-image: url(https://d2j6dbq0eux0bg.cloudfront.net/images/62087280/2346701967.jpg);
+                        }
+
+                        #img4 {
+                            background-image: url(https://d2j6dbq0eux0bg.cloudfront.net/images/62087280/2339705906.jpg);
+                        }
+
+                        #img5 {
+                            background-image: url(https://d2j6dbq0eux0bg.cloudfront.net/images/62087280/2339706637.jpg);
+                        }
+
+                        #img6 {
+                            background-image: url(https://d2j6dbq0eux0bg.cloudfront.net/images/62087280/2339708815.jpg);
+                        }
+
+                        #img7 {
+                            background-image: url(https://d2j6dbq0eux0bg.cloudfront.net/images/62087280/2339706865.jpg);
+                        }
+
+                        #img8 {
+                            background-image: url(https://d2j6dbq0eux0bg.cloudfront.net/images/62087280/2339709348.jpg);
+                        }
+
+                        #img9 {
+                            background-image: url(https://d2j6dbq0eux0bg.cloudfront.net/images/62087280/2339664460.jpg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

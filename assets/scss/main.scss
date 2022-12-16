@@ -1,16 +1,8 @@
 @import "./base/reset";
 
-@import "./layout/nav/nav";
-@import "./layout/footer/footer";
+@import "./layout/nav";
+@import "./layout/footer";
 
-@import "./pages/wellcome/wellcome";
-
-@import "./pages/bestsellers/bestsellers";
-
-@import "./pages/decoritems/decoritems";
-
-@import "./pages/infoitems/infoitems";
-
-@import "./pages/signupnews/signupnews";
-
-@import "./pages/followus/followus";
+@import "./pages/home";
+@import "./pages/shop";
+@import "./pages/about";

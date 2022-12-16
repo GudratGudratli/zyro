@@ -63,12 +63,14 @@ button {
 }
 
 nav {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   width: 100%;
+  -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
   background-color: rgba(255, 255, 255, 0.5);
+  z-index: 1;
 }
 nav .navbar {
   display: flex;
@@ -77,9 +79,11 @@ nav .navbar {
   align-items: center;
   height: 70px;
 }
-nav .navbar .main-head {
+nav .navbar .main-head a {
+  color: #000;
   font-size: 28px;
   font-weight: 700;
+  cursor: pointer;
 }
 nav .navbar .links {
   display: flex;
@@ -153,7 +157,7 @@ footer .icons i {
   font-size: 24px;
 }
 
-.wellcome {
+main .wellcome {
   background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/minattnvs/Rectangle-YZ9P6kWjMnUBNL6W.png);
   background-position: center;
   background-size: cover;
@@ -168,19 +172,18 @@ footer .icons i {
   gap: 50px;
   text-align: center;
 }
-.wellcome h2 {
+main .wellcome h2 {
   font-size: 100px;
 }
-.wellcome #shop-now {
+main .wellcome #shop-now {
   padding: 18px 45px;
   border: none;
   font-size: 16px;
 }
-.wellcome #shop-now:hover {
+main .wellcome #shop-now:hover {
   background-color: #ddd;
 }
-
-.bestsellers {
+main .bestsellers {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -190,45 +193,45 @@ footer .icons i {
   color: #4d2c57;
   min-height: 100vh;
 }
-.bestsellers .items {
+main .bestsellers .items {
   display: flex;
   flex-direction: row;
   gap: 15px;
 }
-.bestsellers .items .item {
+main .bestsellers .items .item {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.bestsellers .items .item span {
+main .bestsellers .items .item span {
   font-size: 24px;
 }
-.bestsellers .items .item p {
+main .bestsellers .items .item p {
   font-size: 18px;
 }
-.bestsellers .items .item .img {
+main .bestsellers .items .item .img {
   width: 304px;
   height: 288px;
   background-repeat: no-repeat;
   background-position: center;
 }
-.bestsellers .items .item #img1 {
+main .bestsellers .items .item #img1 {
   background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=288,h=304,fit=crop/minattnvs/Rectangle-AQE0LkVlnZuql51v.png);
 }
-.bestsellers .items .item #img2 {
+main .bestsellers .items .item #img2 {
   background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=288,h=304,fit=crop/minattnvs/Rectangle-A3QnLXpRVnfXy4bK.png);
 }
-.bestsellers .items .item #img3 {
+main .bestsellers .items .item #img3 {
   background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=288,h=304,fit=crop/minattnvs/Rectangle-YKb0ekr18NtRgKPB.png);
 }
-.bestsellers .items .item #img4 {
+main .bestsellers .items .item #img4 {
   background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=288,h=304,fit=crop/minattnvs/Rectangle-mv03n67VzMHgx3z7.png);
 }
-.bestsellers h3 {
+main .bestsellers h3 {
   font-size: 48px;
   margin-top: 50px;
 }
-.bestsellers button {
+main .bestsellers button {
   font-size: 16px;
   padding: 18px 45px;
   background-color: #fff;
@@ -236,33 +239,32 @@ footer .icons i {
   transition: 0.3s;
   border-color: #4d2c57;
 }
-.bestsellers button:hover {
+main .bestsellers button:hover {
   background-color: #4d2c57;
   color: #fff;
 }
-
 @media screen and (max-width: 1280px) {
-  .bestsellers .items {
+  main .bestsellers .items {
     flex-direction: column;
   }
-  .bestsellers .items .item .img {
+  main .bestsellers .items .item .img {
     height: 403px;
     width: 382px;
   }
-  .bestsellers .items .item #img1 {
+  main .bestsellers .items .item #img1 {
     background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=382,h=403,fit=crop/minattnvs/Rectangle-AQE0LkVlnZuql51v.png);
   }
-  .bestsellers .items .item #img2 {
+  main .bestsellers .items .item #img2 {
     background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=382,h=403,fit=crop/minattnvs/Rectangle-A3QnLXpRVnfXy4bK.png);
   }
-  .bestsellers .items .item #img3 {
+  main .bestsellers .items .item #img3 {
     background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=382,h=403,fit=crop/minattnvs/Rectangle-YKb0ekr18NtRgKPB.png);
   }
-  .bestsellers .items .item #img4 {
+  main .bestsellers .items .item #img4 {
     background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=382,h=403,fit=crop/minattnvs/Rectangle-mv03n67VzMHgx3z7.png);
   }
 }
-.home-decor-items {
+main .home-decor-items {
   background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/minattnvs/Untitled-AzGRJwMK6BHxZypJ.png);
   background-position: center;
   background-size: cover;
@@ -277,31 +279,71 @@ footer .icons i {
   gap: 30px;
   text-align: center;
 }
-.home-decor-items h2 {
+main .home-decor-items h2 {
   font-size: 100px;
 }
-.home-decor-items #shop-now {
+main .home-decor-items #shop-now {
   padding: 18px 45px;
   border: none;
   font-size: 16px;
 }
-.home-decor-items #shop-now:hover {
+main .home-decor-items #shop-now:hover {
   background-color: #ddd;
 }
-
-.info-items {
+main .follow-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+main .follow-us h2 {
+  margin-top: 50px;
+  font-size: 54px;
+}
+main .follow-us a, main .follow-us h2 {
+  color: #4d2c57;
+}
+main .follow-us a {
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+main .follow-us .images {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+main .follow-us .images .img {
+  width: 392px;
+  height: 368px;
+}
+main .follow-us .images #img1 {
+  background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=392,h=368,fit=crop/minattnvs/mm-YBgqvl9QloTBK3BL.png);
+}
+main .follow-us .images #img2 {
+  background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=392,h=368,fit=crop/minattnvs/gg-mk37Q8gargCeBpom.png);
+}
+main .follow-us .images #img3 {
+  background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=392,h=368,fit=crop/minattnvs/pp-Y4LyMOXgyWUGR3qZ.png);
+}
+@media screen and (max-width: 1280px) {
+  main .follow-us .images {
+    flex-direction: column;
+  }
+}
+main .info-items {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.info-items .row {
+main .info-items .row {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   gap: 25px;
 }
-.info-items .row .item {
+main .info-items .row .item {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -309,18 +351,18 @@ footer .icons i {
   gap: 25px;
   color: #4d2c57;
 }
-.info-items .row .item .img {
+main .info-items .row .item .img {
   width: 600px;
   height: 388px;
 }
-.info-items .row .item h4 {
+main .info-items .row .item h4 {
   font-size: 32px;
   font-weight: 500;
 }
-.info-items .row .item span {
+main .info-items .row .item span {
   font-size: 18px;
 }
-.info-items .row .item button {
+main .info-items .row .item button {
   font-size: 16px;
   padding: 15px 45px;
   background-color: #fff;
@@ -328,23 +370,22 @@ footer .icons i {
   transition: 0.3s;
   border-color: #4d2c57;
 }
-.info-items .row .item button:hover {
+main .info-items .row .item button:hover {
   background-color: #4d2c57;
   color: #fff;
 }
-.info-items .row .item #img1 {
+main .info-items .row .item #img1 {
   background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=600,h=368,fit=crop/minattnvs/Rectangle-AVLnvkgy1guy1MK4.png);
 }
-.info-items .row .item #img2 {
+main .info-items .row .item #img2 {
   background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=600,h=368,fit=crop/minattnvs/Rectangle-dJo73kDbN1i6M7yx.png);
 }
-
 @media screen and (max-width: 1280px) {
-  .info-items .row {
+  main .info-items .row {
     flex-direction: column;
   }
 }
-.signup-newsletter {
+main .signup-newsletter {
   background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/minattnvs/Frame-AGBpDkZaG5cRpbaw.png);
   background-position: center;
   background-size: cover;
@@ -359,62 +400,191 @@ footer .icons i {
   gap: 50px;
   text-align: center;
 }
-.signup-newsletter h2 {
+main .signup-newsletter h2 {
   font-size: 100px;
 }
-.signup-newsletter input {
+main .signup-newsletter input {
   background-color: rgba(255, 255, 255, 0.5);
   border: none;
   padding: 15px 100px;
 }
-.signup-newsletter #shop-now {
+main .signup-newsletter #shop-now {
   padding: 18px 45px;
   border: none;
   font-size: 16px;
 }
-.signup-newsletter #shop-now:hover {
+main .signup-newsletter #shop-now:hover {
   background-color: #ddd;
 }
 
-.follow-us {
+main .shop-wellcome #img {
+  background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/minattnvs/dd-d95eByKQX2CoQJ4L.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 404px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .shop-wellcome #img h1 {
+  font-size: 84px;
+  color: #fff;
+}
+main .items-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 75px 0px;
+}
+main .items-content .items-content-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  width: 1280px;
+}
+main .items-content .items-content-inner .shopping-categories {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  color: #878786;
+}
+main .items-content .items-content-inner .shopping-categories div {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+main .items-content .items-content-inner .shopping-options {
+  color: #878786;
+  display: flex;
+  gap: 10px;
+  align-self: flex-end;
+}
+main .items-content .items-content-inner .items {
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 50px;
 }
-.follow-us h2 {
-  margin-top: 50px;
-  font-size: 54px;
-}
-.follow-us a, .follow-us h2 {
-  color: #4d2c57;
-}
-.follow-us a {
-  font-size: 24px;
-  margin-bottom: 50px;
-}
-.follow-us .images {
+main .items-content .items-content-inner .items .item {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 25px;
 }
-.follow-us .images .img {
-  width: 392px;
-  height: 368px;
+main .items-content .items-content-inner .items .item .item-content {
+  text-align: center;
+  line-height: 30px;
+  color: #2c2c2c;
 }
-.follow-us .images #img1 {
-  background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=392,h=368,fit=crop/minattnvs/mm-YBgqvl9QloTBK3BL.png);
+main .items-content .items-content-inner .items .item .item-content p {
+  font-size: 18px;
 }
-.follow-us .images #img2 {
-  background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=392,h=368,fit=crop/minattnvs/gg-mk37Q8gargCeBpom.png);
+main .items-content .items-content-inner .items .item .item-content span {
+  font-size: 24px;
+  font-weight: 700;
 }
-.follow-us .images #img3 {
-  background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=392,h=368,fit=crop/minattnvs/pp-Y4LyMOXgyWUGR3qZ.png);
+main .items-content .items-content-inner .items .item .img-frame {
+  width: 386.5px;
+  height: 386.5px;
+  overflow: hidden;
+}
+main .items-content .items-content-inner .items .item .img-frame .img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 386.5px;
+  height: 386.5px;
+  transition: 0.5s;
+}
+main .items-content .items-content-inner .items .item .img-frame .img:hover {
+  transform: scale(1.25);
+}
+main .items-content .items-content-inner .items .item .img-frame #img1 {
+  background-image: url(https://d2j6dbq0eux0bg.cloudfront.net/images/62087280/2339697137.jpg);
+}
+main .items-content .items-content-inner .items .item .img-frame #img2 {
+  background-image: url(https://d2j6dbq0eux0bg.cloudfront.net/images/62087280/2339705789.jpg);
+}
+main .items-content .items-content-inner .items .item .img-frame #img3 {
+  background-image: url(https://d2j6dbq0eux0bg.cloudfront.net/images/62087280/2346701967.jpg);
+}
+main .items-content .items-content-inner .items .item .img-frame #img4 {
+  background-image: url(https://d2j6dbq0eux0bg.cloudfront.net/images/62087280/2339705906.jpg);
+}
+main .items-content .items-content-inner .items .item .img-frame #img5 {
+  background-image: url(https://d2j6dbq0eux0bg.cloudfront.net/images/62087280/2339706637.jpg);
+}
+main .items-content .items-content-inner .items .item .img-frame #img6 {
+  background-image: url(https://d2j6dbq0eux0bg.cloudfront.net/images/62087280/2339708815.jpg);
+}
+main .items-content .items-content-inner .items .item .img-frame #img7 {
+  background-image: url(https://d2j6dbq0eux0bg.cloudfront.net/images/62087280/2339706865.jpg);
+}
+main .items-content .items-content-inner .items .item .img-frame #img8 {
+  background-image: url(https://d2j6dbq0eux0bg.cloudfront.net/images/62087280/2339709348.jpg);
+}
+main .items-content .items-content-inner .items .item .img-frame #img9 {
+  background-image: url(https://d2j6dbq0eux0bg.cloudfront.net/images/62087280/2339664460.jpg);
 }
 
-@media screen and (max-width: 1280px) {
-  .follow-us .images {
-    flex-direction: column;
-  }
+main .about-wellcome #img {
+  background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/minattnvs/Frame-YanWlX24wOIg2vwL.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 404px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .about-wellcome #img h1 {
+  font-size: 84px;
+  color: #fff;
+}
+main .about-info-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .about-info-content .content {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0px;
+}
+main .about-info-content .content p {
+  color: #4d2c57;
+  font-size: 24px;
+}
+main .about-alex-laura {
+  width: 100%;
+  background-color: #f6f7f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .about-alex-laura .about-alex-laura-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1280px;
+  gap: 20px;
+}
+main .about-alex-laura .about-alex-laura-inner .img {
+  background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=606,h=1008,fit=crop/minattnvs/pexels-cottonbro-YKb0eZ64DRiPyZoD.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 700px;
+  height: 700px;
 }/*# sourceMappingURL=main.css.map */

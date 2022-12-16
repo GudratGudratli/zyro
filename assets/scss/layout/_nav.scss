@@ -6,6 +6,7 @@ nav{
     -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
     background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
     .navbar{
         display: flex;
         flex-direction: row;
@@ -13,8 +14,12 @@ nav{
         align-items: center;
         height: 70px;
         .main-head{
-            font-size: 28px;
-            font-weight: 700;
+            a{
+                color: #000;
+                font-size: 28px;
+                font-weight: 700;
+                cursor: pointer;
+            }
         }
         .links{
             display: flex;

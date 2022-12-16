@@ -1,0 +1,289 @@
+main{
+    // wellcome section start
+    .wellcome {
+        background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/minattnvs/Rectangle-YZ9P6kWjMnUBNL6W.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        gap: 50px;
+        text-align: center;
+        h2{
+            font-size: 100px;
+        }
+        #shop-now{
+            padding: 18px 45px;
+            border: none;
+            font-size: 16px;
+        }
+        #shop-now:hover{
+            background-color: #ddd;
+        }
+    }
+    // wellcome section end
+    // bestsellers section start
+    .bestsellers{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        gap: 50px;
+        color: #4d2c57;
+        min-height: 100vh;
+        .items{
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            .item{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                span{
+                    font-size: 24px;
+                }
+                p{
+                    font-size: 18px;
+                }
+                .img{
+                    width: 304px;
+                    height: 288px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+                #img1{
+                    background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=288,h=304,fit=crop/minattnvs/Rectangle-AQE0LkVlnZuql51v.png);
+                }
+                #img2{
+                    background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=288,h=304,fit=crop/minattnvs/Rectangle-A3QnLXpRVnfXy4bK.png);
+                }
+                #img3{
+                    background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=288,h=304,fit=crop/minattnvs/Rectangle-YKb0ekr18NtRgKPB.png);
+                }
+                #img4{
+                    background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=288,h=304,fit=crop/minattnvs/Rectangle-mv03n67VzMHgx3z7.png);
+                }
+            }
+        }
+        h3{
+            font-size: 48px;
+            margin-top: 50px;
+        }
+        button{
+            font-size: 16px;
+            padding: 18px 45px;
+            background-color: #fff;
+            margin-bottom: 100px;
+            transition: 0.3s;
+            border-color: #4d2c57;
+        }
+        button:hover{
+            background-color: #4d2c57;
+            color: #fff;
+        }
+    }
+    
+    @media screen and(max-width:1280px) {
+        .bestsellers{
+            .items{
+                flex-direction: column;
+                .item{
+                    .img{
+                        height: 403px;
+                        width: 382px;
+                    }
+                    #img1{
+                        background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=382,h=403,fit=crop/minattnvs/Rectangle-AQE0LkVlnZuql51v.png);
+                    }
+                    #img2{
+                        background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=382,h=403,fit=crop/minattnvs/Rectangle-A3QnLXpRVnfXy4bK.png);
+                    }
+                    #img3{
+                        background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=382,h=403,fit=crop/minattnvs/Rectangle-YKb0ekr18NtRgKPB.png);
+                    }
+                    #img4{
+                        background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=382,h=403,fit=crop/minattnvs/Rectangle-mv03n67VzMHgx3z7.png);
+                    }
+                }
+            }
+        }
+    }
+    // bestsellers section end
+    // home-decor-items section start
+    .home-decor-items {
+        background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/minattnvs/Untitled-AzGRJwMK6BHxZypJ.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        gap: 30px;
+        text-align: center;
+        h2{
+            font-size: 100px;
+        }
+        #shop-now{
+            padding: 18px 45px;
+            border: none;
+            font-size: 16px;
+        }
+        #shop-now:hover{
+            background-color: #ddd;
+        }
+    }
+    // home-decor-items section end
+    // follow-us section start
+    .follow-us{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        h2{
+            margin-top: 50px;
+            font-size: 54px;
+        }
+        a,h2{
+            color: #4d2c57;
+        }
+        a{
+            font-size: 24px;
+            margin-bottom: 50px;
+        }
+        .images{
+            display: flex;
+            flex-direction: row;
+            gap: 25px;
+            .img{
+                width: 392px;
+                height: 368px;
+            }
+            #img1{
+                background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=392,h=368,fit=crop/minattnvs/mm-YBgqvl9QloTBK3BL.png);
+            }
+            #img2{
+                background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=392,h=368,fit=crop/minattnvs/gg-mk37Q8gargCeBpom.png);
+            }
+            #img3{
+                background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=392,h=368,fit=crop/minattnvs/pp-Y4LyMOXgyWUGR3qZ.png);
+            }
+        }
+    }
+    
+    @media screen and(max-width:1280px) {
+        .follow-us{
+            .images{
+                flex-direction: column;
+            }
+        }
+    }
+    // follow-us section end
+    // info items section start
+    .info-items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .row{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 25px;
+            .item{
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                flex-direction: column;
+                gap: 25px;
+                color: #4d2c57;
+    
+                .img{
+                    width: 600px;
+                    height: 388px;
+                }
+    
+                h4{
+                    font-size: 32px;
+                    font-weight: 500;
+                }
+    
+                span{
+                    font-size: 18px;
+                }
+    
+                button{
+                    font-size: 16px;
+                    padding: 15px 45px;
+                    background-color: #fff;
+                    margin-bottom: 100px;
+                    transition: 0.3s;
+                    border-color: #4d2c57;
+                }
+                button:hover{
+                    background-color: #4d2c57;
+                    color: #fff;
+                }
+    
+                #img1{
+                    background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=600,h=368,fit=crop/minattnvs/Rectangle-AVLnvkgy1guy1MK4.png);
+                }
+                #img2{
+                    background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=600,h=368,fit=crop/minattnvs/Rectangle-dJo73kDbN1i6M7yx.png);
+                }
+            }
+        }
+    }
+    
+    @media screen and(max-width:1280px){
+        .info-items{
+            .row{
+                flex-direction: column;
+            }
+        }
+    }
+    // info items section end
+    // signupnews section start
+    .signup-newsletter {
+        background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/minattnvs/Frame-AGBpDkZaG5cRpbaw.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        gap: 50px;
+        text-align: center;
+        h2{
+            font-size: 100px;
+        }
+        input{
+            background-color: rgba(255, 255, 255, 0.5);
+            border: none;
+            padding: 15px 100px;
+        }
+        #shop-now{
+            padding: 18px 45px;
+            border: none;
+            font-size: 16px;
+        }
+        #shop-now:hover{
+            background-color: #ddd;
+        }
+    }
+    // signupnews section end
+}
