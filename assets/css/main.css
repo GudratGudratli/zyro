@@ -63,11 +63,10 @@ button {
 }
 
 nav {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   width: 100%;
-  -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
   background-color: rgba(255, 255, 255, 0.5);
   z-index: 1;
@@ -565,6 +564,7 @@ main .about-info-content .content {
 main .about-info-content .content p {
   color: #4d2c57;
   font-size: 24px;
+  font-weight: 500;
 }
 main .about-alex-laura {
   width: 100%;
@@ -578,13 +578,191 @@ main .about-alex-laura .about-alex-laura-inner {
   justify-content: center;
   align-items: center;
   width: 1280px;
-  gap: 20px;
+  gap: 50px;
 }
 main .about-alex-laura .about-alex-laura-inner .img {
   background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=606,h=1008,fit=crop/minattnvs/pexels-cottonbro-YKb0eZ64DRiPyZoD.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 700px;
-  height: 700px;
+  width: 900px;
+  height: 1000px;
+}
+main .about-alex-laura .about-alex-laura-inner .text-content {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 50px;
+  line-height: 30px;
+  color: #4d2c57;
+}
+main .about-alex-laura .about-alex-laura-inner .text-content h2 {
+  font-size: 54px;
+  font-weight: 500;
+}
+main .about-alex-laura .about-alex-laura-inner .text-content p {
+  font-size: 18px;
+}
+main .about-sustainability {
+  width: 100%;
+  background-color: #fd925c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .about-sustainability .about-sustainability-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1280px;
+  gap: 50px;
+}
+main .about-sustainability .about-sustainability-inner .img {
+  background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=606,h=467,fit=crop/minattnvs/Rectangle-YrDPEe422ktklvXj.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 900px;
+  height: 600px;
+}
+main .about-sustainability .about-sustainability-inner .text-content {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 50px;
+  line-height: 30px;
+  color: #fff;
+}
+main .about-sustainability .about-sustainability-inner .text-content h2 {
+  font-size: 54px;
+  font-weight: 500;
+}
+main .about-sustainability .about-sustainability-inner .text-content p {
+  font-size: 18px;
+}
+main .about-sustainability .about-sustainability-inner .text-content button {
+  padding: 20px 60px;
+  border: none;
+  background-color: #fff;
+  color: #4d2c57;
+  font-size: 16px;
+}
+main .about-sustainability .about-sustainability-inner .text-content button:hover {
+  background-color: #ddd;
+}
+
+main .sustainability-wellcome #img {
+  background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/minattnvs/Frame-m6LKEnXEpDfX8lgk.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 404px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .sustainability-wellcome #img h1 {
+  font-size: 84px;
+  color: #fff;
+}
+main .sustainability-info-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .sustainability-info-content .content {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0px;
+}
+main .sustainability-info-content .content p {
+  color: #4d2c57;
+  font-size: 24px;
+  font-weight: 500;
+}
+main .sustainability-working-ethos {
+  width: 100%;
+  background-color: #f6f7f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .sustainability-working-ethos .sustainability-working-ethos-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1280px;
+  gap: 50px;
+}
+main .sustainability-working-ethos .sustainability-working-ethos-inner .img {
+  background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=606,h=816,fit=crop/minattnvs/ll-A1aynE83WJc9WylX.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 900px;
+  height: 1000px;
+}
+main .sustainability-working-ethos .sustainability-working-ethos-inner .text-content {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 50px;
+  line-height: 30px;
+  color: #4d2c57;
+}
+main .sustainability-working-ethos .sustainability-working-ethos-inner .text-content h2 {
+  font-size: 54px;
+  font-weight: 500;
+}
+main .sustainability-working-ethos .sustainability-working-ethos-inner .text-content p {
+  font-size: 18px;
+}
+main .sustainability-materials {
+  width: 100%;
+  background-color: #fd925c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .sustainability-materials .sustainability-materials-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1280px;
+  gap: 50px;
+}
+main .sustainability-materials .sustainability-materials-inner .img {
+  background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=606,h=549,fit=crop/minattnvs/pp-AoP0LMM1VPTawJL6.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 900px;
+  height: 600px;
+}
+main .sustainability-materials .sustainability-materials-inner .text-content {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 50px;
+  line-height: 30px;
+  color: #fff;
+}
+main .sustainability-materials .sustainability-materials-inner .text-content h2 {
+  font-size: 54px;
+  font-weight: 500;
+}
+main .sustainability-materials .sustainability-materials-inner .text-content p {
+  font-size: 18px;
 }/*# sourceMappingURL=main.css.map */

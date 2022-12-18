@@ -1,7 +1,7 @@
 main {
-    .about-wellcome {
+    .sustainability-wellcome {
         #img {
-            background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/minattnvs/Frame-YanWlX24wOIg2vwL.png);
+            background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/minattnvs/Frame-m6LKEnXEpDfX8lgk.png);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -18,7 +18,7 @@ main {
         }
     }
 
-    .about-info-content {
+    .sustainability-info-content {
         width: 100%;
         display: flex;
         align-items: center;
@@ -39,21 +39,21 @@ main {
         }
     }
 
-    .about-alex-laura {
+    .sustainability-working-ethos {
         width: 100%;
         background-color: #f6f7f6;
         display: flex;
         justify-content: center;
         align-items: center;
 
-        .about-alex-laura-inner {
+        .sustainability-working-ethos-inner {
             display: flex;
             justify-content: center;
             align-items: center;
             width: 1280px;
             gap: 50px;
             .img{
-                background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=606,h=1008,fit=crop/minattnvs/pexels-cottonbro-YKb0eZ64DRiPyZoD.jpg);
+                background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=606,h=816,fit=crop/minattnvs/ll-A1aynE83WJc9WylX.png);
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -80,21 +80,21 @@ main {
         }
     }
 
-    .about-sustainability {
+    .sustainability-materials {
         width: 100%;
         background-color: #fd925c;
         display: flex;
         justify-content: center;
         align-items: center;
 
-        .about-sustainability-inner {
+        .sustainability-materials-inner {
             display: flex;
             justify-content: center;
             align-items: center;
             width: 1280px;
             gap: 50px;
             .img{
-                background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=606,h=467,fit=crop/minattnvs/Rectangle-YrDPEe422ktklvXj.png);
+                background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=606,h=549,fit=crop/minattnvs/pp-AoP0LMM1VPTawJL6.png);
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -116,16 +116,6 @@ main {
                 }
                 p{
                     font-size: 18px;
-                }
-                button{
-                    padding: 20px 60px;
-                    border: none;
-                    background-color: #fff;
-                    color: #4d2c57;
-                    font-size: 16px;
-                }
-                button:hover{
-                    background-color: #ddd;
                 }
             }
         }
